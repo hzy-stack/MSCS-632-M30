@@ -1,0 +1,22 @@
+$ rustc -O memory_demo.rs -o memory_demo
+$ ./memory_demo
+Allocated 1000000 i64 values on the heap (~7 MB)
+Borrow sums (same vector used twice): 500000500000 500000500000
+Move sum: 500000500000
+End of main -- any remaining owned values are dropped here.
+
+$ rustc -O memory_demo.rs   (with the borrow-after-move line uncommented)
+error[E0382]: borrow of moved value: `numbers`
+  --> memory_demo.rs:32:32
+   |
+17 |     let numbers: Vec<i64> = (1..=1_000_000).collect();
+   |         ------- move occurs because `numbers` has type `Vec<i64>`,
+   |                 which does not implement the `Copy` trait
+...
+30 |     let s3 = sum_by_move(numbers);
+   |                          ------- value moved here
+31 |
+32 |     let s4 = sum_by_borrow(&numbers);
+   |                            ^^^^^^^^ value borrowed here after move
+
+error: aborting due to 1 previous error

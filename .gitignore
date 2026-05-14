@@ -1,0 +1,20 @@
+# Compiled binaries / bytecode
+*.o
+*.class
+*.exe
+*.out
+sum_correct
+sum_broken
+type_demo
+memory_demo
+
+# OS / IDE noise
+.DS_Store
+.idea/
+.vscode/
+
+# Word lock / temp files
+~$*.docx
+
+# Local helper scripts (not part of the assignment)
+*.command

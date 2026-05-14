@@ -1,0 +1,8 @@
+$ javac MemoryDemo.java
+$ java -Xmx256m MemoryDemo
+[start          ] used =    2 MB, jvm total =  256 MB
+[after alloc    ] used =   11 MB, jvm total =  256 MB
+Sum = 500000500000
+Before clearing strong ref: weak.get() != null -> true
+[after gc       ] used =    2 MB, jvm total =  256 MB
+After clearing strong ref:  weak.get() != null -> false
