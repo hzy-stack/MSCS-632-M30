@@ -1,0 +1,27 @@
+================================================================================
+=========================== Weekly Employee Schedule ===========================
+================================================================================
+Day       Morning               Afternoon             Evening               
+--------------------------------------------------------------------------------
+Monday    Alice, David, Frank   Bob, Iris             Carol, Henry          
+Tuesday   Alice, David, Henry   Bob, Jack             Carol, Grace          
+Wednesday Alice, Frank, Jack    Eve, Iris             Bob, Carol, Grace     
+Thursday  David, Grace          Alice, Eve, Iris      Bob, Henry, Jack      
+Friday    Alice, David, Henry   Bob, Eve              Frank, Iris           
+Saturday  Carol, Frank, Jack    David, Iris           Eve, Grace            
+Sunday    Carol, Henry          Frank, Jack           Eve, Grace            
+
+Days worked per employee:
+  Alice    5
+  Bob      5
+  Carol    5
+  David    5
+  Eve      5
+  Frank    5
+  Grace    5
+  Henry    5
+  Iris     5
+  Jack     5
+
+Conflict resolution notes:
+  - Iris: conflict on Monday morning -> reassigned to Monday afternoon.
