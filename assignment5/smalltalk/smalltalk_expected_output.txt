@@ -1,0 +1,17 @@
+$ gst ride_sharing.st
+===== All rides (polymorphic dispatch) =====
+  Ride #101 [Standard]  Airport -> Downtown  (8.0 mi)  fare = $12.1
+  Ride #102 [Premium]  Hotel -> Conf Center  (3.5 mi)  fare = $16.75
+  Ride #103 [Standard]  Mall -> Suburbs  (12.2 mi)  fare = $17.14
+  Ride #104 [Premium]  Office -> Restaurant  (2.0 mi)  fare = $13.0
+
+===== Driver report =====
+Driver #7  Alice  rating=4.92  rides=2
+  Ride #101 [Standard]  Airport -> Downtown  (8.0 mi)  fare = $12.1
+  Ride #102 [Premium]  Hotel -> Conf Center  (3.5 mi)  fare = $16.75
+
+===== Rider report =====
+Rider #900  Carlos  history (3 rides):
+  Ride #101 [Standard]  Airport -> Downtown  (8.0 mi)  fare = $12.1
+  Ride #103 [Standard]  Mall -> Suburbs  (12.2 mi)  fare = $17.14
+  Ride #104 [Premium]  Office -> Restaurant  (2.0 mi)  fare = $13.0
