@@ -1,0 +1,87 @@
+=== Go (go run .) ===
+01:35:35.542887 enqueued 20 tasks
+01:35:35.543088 worker-1 started
+01:35:35.543103 worker-4 started
+01:35:35.543096 worker-3 started
+01:35:35.543108 worker-2 started
+01:35:35.796661 worker-3 completed
+01:35:35.796644 worker-1 completed
+01:35:35.796692 worker-4 completed
+01:35:35.796672 worker-2 completed
+01:35:35.798873 all workers done. processed 20 tasks, results written to results.txt
+
+--- go/results.txt ---
+task=1 value=1 worker=worker-1
+task=2 value=4 worker=worker-4
+task=3 value=9 worker=worker-3
+task=4 value=16 worker=worker-2
+task=5 value=25 worker=worker-2
+task=6 value=36 worker=worker-1
+task=7 value=49 worker=worker-4
+task=8 value=64 worker=worker-3
+task=9 value=81 worker=worker-3
+task=10 value=100 worker=worker-2
+task=11 value=121 worker=worker-1
+task=12 value=144 worker=worker-4
+task=13 value=169 worker=worker-4
+task=14 value=196 worker=worker-1
+task=15 value=225 worker=worker-3
+task=16 value=256 worker=worker-2
+task=17 value=289 worker=worker-2
+task=18 value=324 worker=worker-3
+task=19 value=361 worker=worker-4
+task=20 value=400 worker=worker-1
+
+=== Java (java DataProcessingSystem) ===
+Jun 15, 2026 1:35:36 AM DataProcessingSystem main
+INFO: Enqueued 20 tasks and 4 stop signals
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-2 started
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-4 started
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-3 started
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-1 started
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-3 received stop signal, terminating
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-2 received stop signal, terminating
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-1 received stop signal, terminating
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-3 completed
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-2 completed
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-4 received stop signal, terminating
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-4 completed
+Jun 15, 2026 1:35:36 AM DataProcessingSystem$Worker run
+INFO: worker-1 completed
+Jun 15, 2026 1:35:36 AM DataProcessingSystem writeResults
+INFO: Wrote 20 results to /Users/dingzheyu/Desktop/Learning/homework/MSCS-632-M30/assignment6/java/results.txt
+Jun 15, 2026 1:35:36 AM DataProcessingSystem main
+INFO: All workers done. Processed 20 tasks.
+
+--- java/results.txt ---
+task=1 value=1 worker=worker-2
+task=2 value=4 worker=worker-4
+task=3 value=9 worker=worker-3
+task=4 value=16 worker=worker-1
+task=5 value=25 worker=worker-3
+task=6 value=36 worker=worker-1
+task=7 value=49 worker=worker-2
+task=8 value=64 worker=worker-4
+task=9 value=81 worker=worker-3
+task=10 value=100 worker=worker-1
+task=11 value=121 worker=worker-4
+task=12 value=144 worker=worker-2
+task=13 value=169 worker=worker-3
+task=14 value=196 worker=worker-1
+task=15 value=225 worker=worker-4
+task=16 value=256 worker=worker-2
+task=17 value=289 worker=worker-3
+task=18 value=324 worker=worker-1
+task=19 value=361 worker=worker-2
+task=20 value=400 worker=worker-4
